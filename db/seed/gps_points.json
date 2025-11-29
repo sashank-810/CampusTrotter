@@ -1,0 +1,17 @@
+[
+  {
+    "tripId": "trip101",
+    "points": [
+      { "timestamp": "2025-09-17T06:30:00Z", "lat": 13.015, "lon": 77.566, "speed": 5 },
+      { "timestamp": "2025-09-17T06:31:00Z", "lat": 13.016, "lon": 77.567, "speed": 6 },
+      { "timestamp": "2025-09-17T06:32:00Z", "lat": 13.017, "lon": 77.568, "speed": 5 }
+    ]
+  },
+  {
+    "tripId": "trip102",
+    "points": [
+      { "timestamp": "2025-09-17T06:35:00Z", "lat": 13.020, "lon": 77.569, "speed": 4 },
+      { "timestamp": "2025-09-17T06:36:00Z", "lat": 13.021, "lon": 77.570, "speed": 5 }
+    ]
+  }
+]

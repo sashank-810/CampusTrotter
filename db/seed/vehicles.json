@@ -1,0 +1,15 @@
+[
+  {
+    "vehicleId": "tv_101",
+    "plateNo": "KA-01-AB-1234",
+    "capacity": 4,
+    "availableSeats": 4,
+    "status": "in_service",
+    "currentRoute": "RED",
+    "location": {
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "timestamp": "2025-10-01T12:00:00Z"
+    }
+  }
+]

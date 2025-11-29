@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "gps": {
+      "$tripId": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$timestamp": {
+          "lat": { ".validate": "newData.isNumber()" },
+          "lon": { ".validate": "newData.isNumber()" },
+          "speed": { ".validate": "newData.isNumber()" }
+        }
+      }
+    },
+    "seatStatus": {
+      "$tripId": {
+        ".read": "auth != null",
+        ".write": "root.child('trips').child($tripId).child('driverRef').val() == auth.uid"
+      }
+    }
+  }
+}

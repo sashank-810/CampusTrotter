@@ -1,0 +1,65 @@
+users:
+  {userId}:
+    name: string
+    email: string
+    phone: string
+    role: enum(student, driver, admin, visitor)
+    createdAt: timestamp
+    lastLogin: timestamp
+    liveLocation:
+      lat: number
+      lon: number
+      updatedAt: timestamp
+    isActive: boolean
+
+vehicles:
+  {vehicleId}:
+    plateNo: string
+    capacity: number
+    status: enum(idle, in_service, maintenance, offline)
+    currentRoute: ref(routes/{routeId})
+
+routes:
+  {routeId}:
+    routeCode: string
+    routeName: string
+    color: string
+    active: boolean
+    scheduledTrips:
+      {scheduledTripId}:
+        tripNumber: number
+        anchorStopId: string
+        departTime: string
+        arrivalTime: string
+        note: string
+drivers:
+  driver_id: string
+  name: string
+  phone: string
+  license_no: string
+  assigned_vehicle: string
+  status: string
+  shift: string
+
+trips:
+  {tripId}:
+    scheduledTripRef: ref(routes/{routeId}/scheduledTrips/{scheduledTripId})
+    vehicleRef: ref(vehicles/{vehicleId})
+    driverRef: ref(drivers/{driverId})
+    startTime: timestamp
+    endTime: timestamp
+    status: enum(scheduled, in_progress, completed, cancelled, paused)
+    gpsPoints:
+      {gpsId}:
+        recordedAt: timestamp
+        lat: number
+        lon: number
+    seatOccupancy:
+      {seatNumber}:
+        status: enum(available, booked, blocked)
+        updatedBy: ref(users/{userId})
+        updatedAt: timestamp
+    occupancySnapshot:
+      occupied: number
+      capacity: number
+      updatedAt: timestamp

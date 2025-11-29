@@ -1,0 +1,15 @@
+[
+  {
+    "userId": "u1",
+    "name": "Alice",
+    "email": "alice@example.com",
+    "role": "passenger"
+  },
+  {
+    "userId": "u2",
+    "name": "Bob",
+    "email": "bob@example.com",
+    "role": "driver"
+  }
+]
+
