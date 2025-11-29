@@ -1,0 +1,854 @@
+{
+  "routes": [
+    {
+      "route_id": "001",
+      "route_name": "Red",
+      "directions": {
+        "to": [
+          {
+            "stop_name": "Main Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56588888888889
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016542471745261,
+              "longitude": 77.5661895237742
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "Nesara Restaurant",
+            "location": {
+              "latitude": 13.016722222222223,
+              "longitude": 77.56508333333333
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "New Hostel Complex",
+            "location": {
+              "latitude": 13.016916666666667,
+              "longitude": 77.56349999999999
+            },
+            "estimated_arrival_time": "01:30"
+          },
+          {
+            "stop_name": "Sarvam Complex",
+            "location": {
+              "latitude": 13.017666666666667,
+              "longitude": 77.56302777777778
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "Faculty Club",
+            "location": {
+              "latitude": 13.019194444444445,
+              "longitude": 77.56480555555555
+            }, 
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "Biological Science Building",
+            "location": {
+              "latitude": 13.023527844373127,
+              "longitude": 77.56317834835895
+            },
+            "estimated_arrival_time": "03:00"
+          },
+          {
+            "stop_name": "D Gate",
+            "location": {
+              "latitude": 13.024333333333335,
+              "longitude": 77.56283333333333
+            },
+            "estimated_arrival_time": "04:00"
+          }
+        ],
+        "fro": [
+          {
+            "stop_name": "D Gate",
+            "location": {
+              "latitude": 13.024333333333335,
+              "longitude": 77.56283333333333
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "Biological Science Building",
+            "location": {
+              "latitude": 13.023527844373127,
+              "longitude": 77.56317834835895
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "Faculty Club",
+            "location": {
+              "latitude": 13.019194444444445,
+              "longitude": 77.56480555555555
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "Sarvam Complex",
+            "location": {
+              "latitude": 13.017666666666667,
+              "longitude": 77.56302777777778
+            },
+            "estimated_arrival_time": "03:00"
+          },
+          {
+            "stop_name": "New Hostel Complex",
+            "location": {
+              "latitude": 13.016916666666667,
+              "longitude": 77.56349999999999
+            },
+            "estimated_arrival_time": "03:30"
+          },
+          {
+            "stop_name": "Nesara Restaurant",
+            "location": {
+              "latitude": 13.016722222222223,
+              "longitude": 77.56508333333333
+            },
+            "estimated_arrival_time": "04:30"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016542471745261,
+              "longitude": 77.5661895237742
+            },
+            "estimated_arrival_time": "04:50"
+          },
+          {
+            "stop_name": "Main Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56588888888889
+            },
+            "estimated_arrival_time": "05:30"
+          }
+        ]
+      }
+    },
+    {
+      "route_id": "002",
+      "route_name": "Blue",
+      "directions": {
+        "to": [
+          {
+            "stop_name": "Maramma Circle Gate",
+            "location": {
+              "latitude": 13.012472222222222,
+              "longitude": 77.56913888888889
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "Satish Dhawan Auditorium",
+            "location": {
+              "latitude": 13.013472222222223,
+              "longitude": 77.56847222222221
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "IAP Dept.",
+            "location": {
+              "latitude": 13.015305555555555,
+              "longitude": 77.56897222222221
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "Civil Engg. Dept.",
+            "location": {
+              "latitude": 13.01538888888889,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "01:30"
+          },
+          {
+            "stop_name": "SERC",
+            "location": {
+              "latitude": 13.016333333333334,
+              "longitude": 77.57044444444445
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "MBU",
+            "location": {
+              "latitude": 13.01725,
+              "longitude": 77.56944444444444
+            },
+            "estimated_arrival_time": "02:30"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "03:00"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "Students' Council",
+            "location": {
+              "latitude": 13.017944444444446,
+              "longitude": 77.5663611111111
+            },
+            "estimated_arrival_time": "04:30"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "05:00"
+          },
+          {
+            "stop_name": "Biological Science Building",
+            "location": {
+              "latitude": 13.024472222222222,
+              "longitude": 77.56422222222221
+            },
+            "estimated_arrival_time": "05:45"
+          },
+          {
+            "stop_name": "D Gate",
+            "location": {
+              "latitude": 13.024333333333335,
+              "longitude": 77.56283333333333
+            },
+            "estimated_arrival_time": "06:00"
+          }
+        ],
+        "fro": [
+          {
+            "stop_name": "D Gate",
+            "location": {
+              "latitude": 13.024333333333335,
+              "longitude": 77.56283333333333
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "Biological Science Building",
+            "location": {
+              "latitude": 13.024472222222222,
+              "longitude": 77.56422222222221
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "00:45"
+          },
+          {
+            "stop_name": "Students' Council",
+            "location": {
+              "latitude": 13.017944444444446,
+              "longitude": 77.5663611111111
+            },
+            "estimated_arrival_time": "02:30"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "02:50"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "MBU",
+            "location": {
+              "latitude": 13.01725,
+              "longitude": 77.56944444444444
+            },
+            "estimated_arrival_time": "04:30"
+          },
+          {
+            "stop_name": "SERC",
+            "location": {
+              "latitude": 13.016333333333334,
+              "longitude": 77.57044444444445
+            },
+            "estimated_arrival_time": "05:00"
+          },
+          {
+            "stop_name": "Civil Engg. Dept.",
+            "location": {
+              "latitude": 13.01538888888889,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "05:30"
+          },
+          {
+            "stop_name": "IAP Dept.",
+            "location": {
+              "latitude": 13.015305555555555,
+              "longitude": 77.56897222222221
+            },
+            "estimated_arrival_time": "06:00"
+          },
+          {
+            "stop_name": "Satish Dhawan Auditorium",
+            "location": {
+              "latitude": 13.013472222222223,
+              "longitude": 77.56847222222221
+            },
+            "estimated_arrival_time": "07:00"
+          },
+          {
+            "stop_name": "Maramma Circle Gate",
+            "location": {
+              "latitude": 13.012472222222222,
+              "longitude": 77.56913888888889
+            },
+            "estimated_arrival_time": "07:30"
+          }
+        ]
+      }
+    },
+    {
+      "route_id": "003",
+      "route_name": "Green",
+      "directions": {
+        "to": [
+          {
+            "stop_name": "Main Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56588888888889
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "00:15"
+          },
+          {
+            "stop_name": "Health Centre",
+            "location": {
+              "latitude": 13.015888888888888,
+              "longitude": 77.56383333333333
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "Nesara Restaurant",
+            "location": {
+              "latitude": 13.016722222222223,
+              "longitude": 77.56508333333333
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "Students' Council",
+            "location": {
+              "latitude": 13.017944444444446,
+              "longitude": 77.5663611111111
+            },
+            "estimated_arrival_time": "02:30"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "Super Bazaar",
+            "location": {
+              "latitude": 13.024361111111112,
+              "longitude": 77.56691666666666
+            },
+            "estimated_arrival_time": "04:15"
+          },
+          {
+            "stop_name": "Faculty Quarters(C,ND,NE)",
+            "location": {
+              "latitude": 13.024777777777778,
+              "longitude": 77.56774999999999
+            },
+            "estimated_arrival_time": "04:45"
+          },
+          {
+            "stop_name": "HE Faculty Quarters",
+            "location": {
+              "latitude": 13.026750000000002,
+              "longitude": 77.56902777777778
+            },
+            "estimated_arrival_time": "05:00"
+          },
+          {
+            "stop_name": "Centenary Visitors' House",
+            "location": {
+              "latitude": 13.027833333333334,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "05:30"
+          },
+          {
+            "stop_name": "CVH Gate",
+            "location": {
+              "latitude": 13.027416666666667,
+              "longitude": 77.57141666666666
+            },
+            "estimated_arrival_time": "06:00"
+          }
+        ],
+        "fro": [
+          {
+            "stop_name": "CVH Gate",
+            "location": {
+              "latitude": 13.027416666666667,
+              "longitude": 77.57141666666666
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "Centenary Visitors' House",
+            "location": {
+              "latitude": 13.027833333333334,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "HE Faculty Quarters",
+            "location": {
+              "latitude": 13.026750000000002,
+              "longitude": 77.56902777777778
+            },
+            "estimated_arrival_time": "00:45"
+          },
+          {
+            "stop_name": "Faculty Quarters(C,ND,NE)",
+            "location": {
+              "latitude": 13.024777777777778,
+              "longitude": 77.56774999999999
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "Super Bazaar",
+            "location": {
+              "latitude": 13.024361111111112,
+              "longitude": 77.56691666666666
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "02:15"
+          },
+          {
+            "stop_name": "Students' Council",
+            "location": {
+              "latitude": 13.017944444444446,
+              "longitude": 77.5663611111111
+            },
+            "estimated_arrival_time": "03:30"
+          },
+          {
+            "stop_name": "Nesara Restaurant",
+            "location": {
+              "latitude": 13.016722222222223,
+              "longitude": 77.56508333333333
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "Health Centre",
+            "location": {
+              "latitude": 13.015888888888888,
+              "longitude": 77.56383333333333
+            },
+            "estimated_arrival_time": "05:00"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "06:00"
+          },
+          {
+            "stop_name": "Main Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56588888888889
+            },
+            "estimated_arrival_time": "06:30"
+          }
+        ]
+      }
+    },
+    {
+      "route_id": "004",
+      "route_name": "Orange",
+      "directions": {
+        "to": [
+          {
+            "stop_name": "Underpass(Near SID)",
+            "location": {
+              "latitude": 13.015333333333333,
+              "longitude": 77.56897222222221
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "Civil Engg. Dept.",
+            "location": {
+              "latitude": 13.01538888888889,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "00:15"
+          },
+          {
+            "stop_name": "Mechanical Engg. Dept.",
+            "location": {
+              "latitude": 13.015527777777777,
+              "longitude": 77.57133333333333
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "SERC",
+            "location": {
+              "latitude": 13.016333333333334,
+              "longitude": 77.57044444444445
+            },
+            "estimated_arrival_time": "00:45"
+          },
+          {
+            "stop_name": "CGPL",
+            "location": {
+              "latitude": 13.017111111111111,
+              "longitude": 77.57116666666666
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "ICER",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "02:15"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "03:00"
+          },
+          {
+            "stop_name": "New Hostel Complex",
+            "location": {
+              "latitude": 13.016916666666667,
+              "longitude": 77.56349999999999
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "N Block Hostel",
+            "location": {
+              "latitude": 13.017166666666668,
+              "longitude": 77.56205555555556
+            },
+            "estimated_arrival_time": "04:15"
+          },
+          {
+            "stop_name": "Sarvam Complex",
+            "location": {
+              "latitude": 13.017666666666667,
+              "longitude": 77.56302777777778
+            },
+            "estimated_arrival_time": "05:00"
+          }
+        ],
+        "fro": [
+          {
+            "stop_name": "Sarvam Complex",
+            "location": {
+              "latitude": 13.017666666666667,
+              "longitude": 77.56302777777778
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "N Block Hostel",
+            "location": {
+              "latitude": 13.017166666666668,
+              "longitude": 77.56205555555556
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "New Hostel Complex",
+            "location": {
+              "latitude": 13.016916666666667,
+              "longitude": 77.56349999999999
+            },
+            "estimated_arrival_time": "00:45"
+          },
+          {
+            "stop_name": "JRD Tata Library",
+            "location": {
+              "latitude": 13.016277777777777,
+              "longitude": 77.56625
+            },
+            "estimated_arrival_time": "01:15"
+          },
+          {
+            "stop_name": "ICER",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "02:15"
+          },
+          {
+            "stop_name": "CGPL",
+            "location": {
+              "latitude": 13.017111111111111,
+              "longitude": 77.57116666666666
+            },
+            "estimated_arrival_time": "03:00"
+          },
+          {
+            "stop_name": "SERC",
+            "location": {
+              "latitude": 13.016333333333334,
+              "longitude": 77.57044444444445
+            },
+            "estimated_arrival_time": "03:45"
+          },
+          {
+            "stop_name": "Mechanical Engg. Dept.",
+            "location": {
+              "latitude": 13.015527777777777,
+              "longitude": 77.57133333333333
+            },
+            "estimated_arrival_time": "04:00"
+          },
+          {
+            "stop_name": "Civil Engg. Dept.",
+            "location": {
+              "latitude": 13.01538888888889,
+              "longitude": 77.57005555555556
+            },
+            "estimated_arrival_time": "04:20"
+          },
+          {
+            "stop_name": "Underpass(Near SID)",
+            "location": {
+              "latitude": 13.015333333333333,
+              "longitude": 77.56897222222221
+            },
+            "estimated_arrival_time": "04:40"
+          }
+        ]
+      }
+    },
+    {
+      "route_id": "005",
+      "route_name": "Purple",
+      "directions": {
+        "to": [
+          {
+            "stop_name": "Security Office Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56774999999999
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "00:15"
+          },
+          {
+            "stop_name": "Main Guest House",
+            "location": {
+              "latitude": 13.020333333333333,
+              "longitude": 77.56805555555555
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "JNC Guest House",
+            "location": {
+              "latitude": 13.02038888888889,
+              "longitude": 77.56658333333333
+            },
+            "estimated_arrival_time": "01:15"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "02:00"
+          },
+          {
+            "stop_name": "Super Bazaar",
+            "location": {
+              "latitude": 13.024361111111112,
+              "longitude": 77.56691666666666
+            },
+            "estimated_arrival_time": "02:10"
+          },
+          {
+            "stop_name": "HE Faculty Quarters",
+            "location": {
+              "latitude": 13.026750000000002,
+              "longitude": 77.56902777777778
+            },
+            "estimated_arrival_time": "03:45"
+          },
+          {
+            "stop_name": "CVH Gate",
+            "location": {
+              "latitude": 13.027416666666667,
+              "longitude": 77.57141666666666
+            },
+            "estimated_arrival_time": "04:10"
+          }
+        ],
+        "fro": [
+          {
+            "stop_name": "CVH Gate",
+            "location": {
+              "latitude": 13.027416666666667,
+              "longitude": 77.57141666666666
+            },
+            "estimated_arrival_time": "00:00"
+          },
+          {
+            "stop_name": "HE Faculty Quarters",
+            "location": {
+              "latitude": 13.026750000000002,
+              "longitude": 77.56902777777778
+            },
+            "estimated_arrival_time": "00:30"
+          },
+          {
+            "stop_name": "Super Bazaar",
+            "location": {
+              "latitude": 13.024361111111112,
+              "longitude": 77.56691666666666
+            },
+            "estimated_arrival_time": "00:50"
+          },
+          {
+            "stop_name": "ECE Dept",
+            "location": {
+              "latitude": 13.022916666666667,
+              "longitude": 77.56663888888889
+            },
+            "estimated_arrival_time": "01:00"
+          },
+          {
+            "stop_name": "JNC Guest House",
+            "location": {
+              "latitude": 13.02038888888889,
+              "longitude": 77.56658333333333
+            },
+            "estimated_arrival_time": "01:35"
+          },
+          {
+            "stop_name": "Main Guest House",
+            "location": {
+              "latitude": 13.020333333333333,
+              "longitude": 77.56805555555555
+            },
+            "estimated_arrival_time": "01:50"
+          },
+          {
+            "stop_name": "IPC Dept.",
+            "location": {
+              "latitude": 13.016166666666667,
+              "longitude": 77.56788888888889
+            },
+            "estimated_arrival_time": "02:30"
+          },
+          {
+            "stop_name": "Security Office Gate",
+            "location": {
+              "latitude": 13.014388888888888,
+              "longitude": 77.56774999999999
+            },
+            "estimated_arrival_time": "03:00"
+          }
+        ]
+      }
+    }
+  ]
+}
