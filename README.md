@@ -9,25 +9,25 @@
 
 * **Course:** DS252 Introduction to Cloud Computing (August 2025 Semester)
 * **Team Name:** StormCrafters
-* **Git Repository:** https://github.com/DS252-StormCrafter/CampusTrotter.git
+* **Git Repository:** https://github.com/sashank-810/CampusTrotter.git
 
 | Team Member | Email ID |
 | :--- | :--- |
-| **JS Vishnu Teja** | vishnutejas@iisc.ac.in |
 | **K Bhargav Sashank** | bhargavsk@iisc.ac.in |
 | **YRS Aakanksha** | aakankshay@iisc.ac.in |
+| **JS Vishnu Teja** | vishnutejas@iisc.ac.in |
 | **Kunjan Manoj Kumar S** | manojkumark@iisc.ac.in |
 
 **Acknowledgement:**
-This project involved the extensive use of AI agents and coding assistants (such as Chatgpt, Gemini, etc.) for generating boilerplate code, debugging assistance, and clarifying complex API/Cloud configuration steps.
+This project involved the extensive use of AI agents and coding assistants (such as Claude Opus, ChatGPT CodeX 5.1 max, Gemini 3 Pro, etc.) for generating boilerplate code, debugging assistance, and clarifying complex API/Cloud configuration steps.
  
  ---
 
 ## What TransVahan delivers
-- **Automated live ops**: Drivers push telemetry; users see buses live with seats and ETAs; admins monitor everything in real time.
-- **Role-based experiences**: Single mobile app with user/driver modes; dedicated admin portal for operations.
-- **Data-driven insights**: Trip synthesis, reservation aging, analytics/reports endpoints, and alerts keep stakeholders informed.
-- **Cloud native**: Containerized backend on AWS App Runner, static admin portal on S3, Firestore as the single source of truth.
+- **Automated Live Ops**: Drivers push telemetry; users see buses live with seats and ETAs; admins monitor everything in real time.
+- **Role-Based Experience**: Single mobile app with user/driver modes; dedicated admin portal for operations.
+- **Data-Driven Insights**: Trip synthesis, reservation aging, analytics/reports endpoints, and alerts keep stakeholders informed.
+- **Cloud Native**: Containerized backend on AWS App Runner, static admin portal on S3, Firestore as the single source of truth.
 
 ---
 
@@ -49,13 +49,13 @@ flowchart LR
   AdminUI -- static site --> S3[S3 Static Hosting]
 ```
 
-**How it fits together**
+**How It Fits Together**
 - **Clients:** Mobile (user + driver) and Admin portal.
 - **Backend API:** Express REST + WebSocket server (App Runner) using Firebase Admin.
 - **Data:** Firestore stores auth, routes/stops, vehicles, reservations, alerts, feedback, trip summaries.
 - **Jobs:** `TripSynthesizer` builds `trip_summary`; `ReservationReaper` expires stale reservations and broadcasts updates.
 
-**Primary data flows**
+**Primary Data Flows**
 1) Driver telemetry → `/driver/telemetry` → Firestore → WebSocket `vehicle` broadcasts to mobile/admin UIs (~1.5s).
 2) User planner/ETA requests → backend computes from routes/stops/reservations → responds with schedules/ETA summaries.
 3) Admin CRUD (drivers/vehicles/routes/assignments/alerts) → backend writes Firestore → emits WebSocket updates to keep UIs in sync.
@@ -120,8 +120,8 @@ flowchart LR
  
  ```bash
  # Clone repo
- git clone https://github.com/DS252-StormCrafter/StormCrafters.git
- cd StormCrafters
+ git clone https://github.com/sashank-810/CampusTrotter.git
+ cd CampusTrotter
  
  # 1) Backend env
  cp backend/.env.example backend/.env
@@ -156,7 +156,10 @@ flowchart LR
  - Replace all the occurances of `<PROJECT_ID>` with your project ID present in downloaded file stored in `./backend`
  - Replace all the occurances of `<WE_NEED_THIS>` with your Google Maps API Key
  - Replace all the occurances of `<UNIQUE_BUCKET_NAME>` with your Unique S3 Bucket Name [You have to set this]
- - Replace all the occurances of `<REGION>` with the AWS Region you are working
+ - For cloud deployment, Replace all the occurances of `<REGION>` with the AWS Region you are working
+ - For local deployment, Replace all the occurances of `<LOCALHOST_BACKEND_URL>` with `localhost:5001`
+ - For local deployment, Replace all the occurances of `<NGROK_BACKEND_URL>` with your NGROK URL which you get by running `ngrok http 5001`
+ - For local  deployment, Replace all the occurrances of `http://<UNIQUE_S3_BUCKET>.s3-website.<REGION>.amazonaws.com` with `http://localhost:3001` and `https://<UNIQUE_S3_BUCKET>.s3-website.<REGION>.amazonaws.com` with `https://localhost:3001`
 
 
 
