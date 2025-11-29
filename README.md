@@ -1,6 +1,6 @@
  # TransVahan — Smart CampusTrotter
  
- **TransVahan CampusTrotter** is a full-stack, real-time campus shuttle platform connecting **Users**, **Drivers**, and **Administrators**.  
+ **CampusTrotter** is a full-stack, real-time campus shuttle platform connecting **Users**, **Drivers**, and **Administrators**.  
  It provides live shuttle tracking, route editing, occupancy analytics, and predictive ETAs — built using Node.js, React, React Native, Firebase, AWS, and Terraform.
  
  ---
@@ -14,12 +14,12 @@
 | Team Member | Email ID |
 | :--- | :--- |
 | **K Bhargav Sashank** | bhargavsk@iisc.ac.in |
-| **YRS Aakanksha** | aakankshay@iisc.ac.in |
+| **Y Ratna Sai Aakanksha** | aakankshay@iisc.ac.in |
 | **JS Vishnu Teja** | vishnutejas@iisc.ac.in |
 | **Kunjan Manoj Kumar S** | manojkumark@iisc.ac.in |
 
 **Acknowledgement:**
-This project involved the extensive use of AI agents and coding assistants (such as Claude Opus, ChatGPT CodeX 5.1 max, Gemini 3 Pro, etc.) for generating boilerplate code, debugging assistance, and clarifying complex API/Cloud configuration steps.
+This project involved the extensive use of AI agents and coding assistants (such as Claude Opus 4.5, ChatGPT CodeX 5.1 max, Gemini 3 Pro, etc.) for generating boilerplate code, debugging assistance, and clarifying complex API/Cloud configuration steps.
  
  ---
 
@@ -281,13 +281,12 @@ If you get a “BucketAlreadyExists” error, edit ```./infra/terraform.tfvars``
 
  - And make sure that what ever u have copied looks like this `abcdefghi.ap-south-1.awsapprunner.com`
 
- - Replace all the occurances of `localhost:5001` and `derick-unmentionable-overdistantly.ngrok-free.dev` with url you copied 
+ - Replace all the occurances of `LOCALHOST_BACKEND_URL` and `NGROK_BACKEND_URL` with URL you copied 
  
  ### Health Check
  ```bash
  
- curl -i https://<APP_RUNNER_URL>/health
- 
+ `curl -i https://<LOCALHOST_BACKEND_URL>/health` or  `curl -i https://<NGROK_BACKEND_URL>/health`
  # Should Return {"ok": true}
 ```
 
@@ -337,7 +336,28 @@ eas build:list
 
 Download the .apk, install it on your Android device, and enjoy your working TransVahan app 🚖
  
-
+ ## 11. Local Deployment
+    For local deployment of backend, follow the steps below:
+    Start running the backend, admin-portal, ngrok, transvahan-user in separate terminal windows
+    ```bash
+    cd backend
+    npm install
+    npm run dev or node src/server.js
+    ```
+    ```bash
+    cd admin-portal
+    npm install
+    npm run dev
+    ```
+    Forward the backend localhost URL to your ngrok URL to use over any network.
+    ```bash
+    ngrok http 5001
+    ```
+    ```bash
+    cd transvahan-user
+    npm install
+    npx expo start --tunnel
+    ```
  ## Quick Reference
 
 | Step | Purpose | Command |
@@ -358,5 +378,6 @@ Download the .apk, install it on your Android device, and enjoy your working Tra
 **Region:** `ap-south-1`  
 **Stack:** Node.js • React • React Native • Firebase • AWS • Terraform  
 **Version:** 1.0.0
+**App**: CampusTrotter
 
 ---
