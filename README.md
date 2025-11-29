@@ -337,27 +337,27 @@ eas build:list
 Download the .apk, install it on your Android device, and enjoy your working TransVahan app 🚖
  
  ## 11. Local Deployment
-    For local deployment of backend, follow the steps below:
-    Start running the backend, admin-portal, ngrok, transvahan-user in separate terminal windows
-    ```bash
+   - For local deployment of backend, follow the steps below:
+   - Start running the backend, admin-portal, ngrok, transvahan-user in separate terminal windows
+   ```bash
     cd backend
     npm install
     npm run dev or node src/server.js
-    ```
-    ```bash
+   ```
+   ```bash
     cd admin-portal
     npm install
     npm run dev
-    ```
-    Forward the backend localhost URL to your ngrok URL to use over any network.
-    ```bash
+   ```
+   - Forward the backend localhost URL to your ngrok URL to use over any network.
+   ```bash
     ngrok http 5001
-    ```
-    ```bash
+   ```
+   ```bash
     cd transvahan-user
     npm install
     npx expo start --tunnel
-    ```
+   ```
  ## Quick Reference
 
 | Step | Purpose | Command |
