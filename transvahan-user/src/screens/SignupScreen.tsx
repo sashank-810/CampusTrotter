@@ -30,6 +30,8 @@ export default function SignupScreen({ navigation }: any) {
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
 
   const onSignup = async () => {
+    console.log("Signup API base:", API);
+
     if (!name || !email || !password || !confirm) {
       Alert.alert("⚠️ Missing Fields", "Please fill all fields.");
       return;
@@ -59,6 +61,11 @@ export default function SignupScreen({ navigation }: any) {
       Alert.alert("📩 OTP Sent", "Please verify the OTP sent to your email.");
       navigation.replace("VerifyOtp", { email: email.trim().toLowerCase() });
     } catch (err: any) {
+      console.error(
+        "Signup error",
+        err?.response?.status,
+        err?.response?.data || err?.message
+      );
       Alert.alert("Signup failed", err?.response?.data?.error ?? "Try again later.");
     } finally {
       setLoading(false);
